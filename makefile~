@@ -1,0 +1,16 @@
+
+prog:trigo.o col.o map.o personage.o enemie.o main.o 
+	gcc trigo.o col.o map.o personage.o enemie.o main.o -o prog -g -lSDL -lSDL_image -lSDL_ttf -lSDL_mixer
+personage.o: personage.c
+	gcc -c personage.c -g -lSDL -lSDL_image -lSDL_ttf -lSDL_mixer
+Map.o: map.c
+	gcc -c map.c -g -lSDL -lSDL_image -lSDL_ttf -lSDL_mixer
+enemie.o: enemie.c
+	 gcc -c enemie.c -g -lSDL -lSDL_image -lSDL_ttf -lSDL_mixer
+col.o: col.c
+	gcc -c col.c -g -lSDL -lSDL_image -lSDL_ttf -lSDL_mixer
+trigo.o: trigo.c
+	gcc -c trigo.c -g -lSDL -lSDL_image -lSDL_ttf -lSDL_mixer
+ 
+
+	
